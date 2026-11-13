@@ -1,3 +1,7 @@
+// TalkingPoints fork: https://github.com/gabdsg/monti-apm-agent/tree/tapo, a copy of it lives in
+// the app's packages/montiapm-agent. Only change: npm deps bumped for security advisories.
+// Upstream: https://github.com/monti-apm/monti-apm-agent
+
 'use strict';
 
 Package.describe({
@@ -8,8 +12,8 @@ Package.describe({
 });
 
 let npmModules = {
-  debug: '0.8.1',
-  '@monti-apm/core': '2.0.0-beta.14',
+  debug: '4.4.3',
+  '@monti-apm/core': '2.0.0',
   'lru-cache': '5.1.1',
   'json-stringify-safe': '5.0.1',
   'monti-apm-sketches-js': '0.0.3',
