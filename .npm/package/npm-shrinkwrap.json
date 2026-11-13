@@ -1,10 +1,15 @@
 {
   "lockfileVersion": 5,
   "dependencies": {
+    "@datadog/sketches-js": {
+      "version": "2.1.1",
+      "resolved": "https://registry.npmjs.org/@datadog/sketches-js/-/sketches-js-2.1.1.tgz",
+      "integrity": "sha512-d5RjycE+MObE/hU+8OM5Zp4VjTwiPLRa8299fj7muOmR16fb942z8byoMbCErnGh0lBevvgkGrLclQDvINbIyg=="
+    },
     "@monti-apm/core": {
       "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/@monti-apm/core/-/core-2.0.0.tgz",
-      "integrity": "sha512-FXRbq2YLFizmbjBZ2dnPkvOpVcbn6SxQGqooZoxyvzfLemkEprU3t+OV8TDoWKyo4WyZDq/mmUD3czq9kDlXxQ==",
+      "resolved": "https://github.com/gabdsg/monti-apm-core/tarball/e8e7bfb9eec5ff83a382ae6c0e24349d2a69f407",
+      "integrity": "sha512-eEu3qB8aca5ai6GDUX4dh9AMjap4f9x4c3Bjxku+b73xNkzGTiJOKt9LF0kLkIwbmk1EQtyUCEs2OQ8LzaQ8XQ==",
       "requires": {
         "axios": "^1.18.1",
         "debug": "^4.4.3",
@@ -242,11 +247,6 @@
         "mime-db": "1.52.0"
       }
     },
-    "monti-apm-sketches-js": {
-      "version": "0.0.3",
-      "resolved": "https://registry.npmjs.org/monti-apm-sketches-js/-/monti-apm-sketches-js-0.0.3.tgz",
-      "integrity": "sha512-YhRbOtVoXyeWgoBIGfSy70pfxDhGj3zuiA66jH7UEAmFqgbq4u/Xfb3Zh2J87xgMJUp7JrrWkVSXgk8gg9ktuQ=="
-    },
     "ms": {
       "version": "2.1.3",
       "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
@@ -275,10 +275,10 @@
   },
   "meteorNpmDependencies": {
     "debug": "4.4.3",
-    "@monti-apm/core": "2.0.0",
+    "@monti-apm/core": "https://github.com/gabdsg/monti-apm-core/tarball/e8e7bfb9eec5ff83a382ae6c0e24349d2a69f407",
     "lru-cache": "5.1.1",
     "json-stringify-safe": "5.0.1",
-    "monti-apm-sketches-js": "0.0.3",
+    "@datadog/sketches-js": "2.1.1",
     "parseurl": "1.3.3"
   }
 }

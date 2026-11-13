@@ -1,5 +1,7 @@
 // TalkingPoints fork: https://github.com/gabdsg/monti-apm-agent/tree/tapo, a copy of it lives in
-// the app's packages/montiapm-agent. Only change: npm deps bumped for security advisories.
+// the app's packages/montiapm-agent. Changes: npm deps bumped for security advisories,
+// @monti-apm/core from our fork (gabdsg/monti-apm-core@tapo), and lib/sketch.js
+// wrapping @datadog/sketches-js in place of monti-apm-sketches-js.
 // Upstream: https://github.com/monti-apm/monti-apm-agent
 
 'use strict';
@@ -13,10 +15,10 @@ Package.describe({
 
 let npmModules = {
   debug: '4.4.3',
-  '@monti-apm/core': '2.0.0',
+  '@monti-apm/core': 'https://github.com/gabdsg/monti-apm-core/tarball/e8e7bfb9eec5ff83a382ae6c0e24349d2a69f407',
   'lru-cache': '5.1.1',
   'json-stringify-safe': '5.0.1',
-  'monti-apm-sketches-js': '0.0.3',
+  '@datadog/sketches-js': '2.1.1',
 
   // parseurl is also used by WebApp.
   // Since it caches the parsed url on
